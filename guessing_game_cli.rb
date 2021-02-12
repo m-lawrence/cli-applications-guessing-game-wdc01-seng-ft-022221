@@ -15,10 +15,10 @@ end
 def run_guessing_game
   random = gen_number
   guess_prompt
-  guess = user_guess
-  if guess == random
+  user_guess
+  if user_guess == random
     puts "You guessed the correct number!"
-    elsif guess == "exit"
+    elsif user_guess == "exit"
     puts "Goodbye!"
   else puts "Sorry! The computer guessed #{random}."
 end
